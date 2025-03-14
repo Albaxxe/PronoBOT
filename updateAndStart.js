@@ -1,22 +1,33 @@
 // updateAndStart.js
 const { execSync } = require('child_process');
 
-try {
-  // Ajouter tous les fichiers
-  console.log('Exécution de "git add ." ...');
-  execSync('git add .', { stdio: 'inherit' });
+/**
+ * Exécute une commande shell et affiche une description.
+ * En cas d'erreur, elle lève l'exception pour le bloc try/catch.
+ * @param {string} command La commande à exécuter
+ * @param {string} description Description de l'opération
+ */
+function runCommand(command, description) {
+  console.log(`Exécution de "${command}" (${description})...`);
+  execSync(command, { stdio: 'inherit' });
+}
 
-  // Tenter de committer; en cas d'erreur (aucun changement), on l'ignore
+try {
+  // Récupérer les dernières modifications depuis le dépôt distant
+  runCommand('git pull origin main', 'Mise à jour du dépôt');
+
+  // Ajouter tous les fichiers modifiés
+  runCommand('git add .', 'Ajout des fichiers');
+
+  // Tenter de committer ; si aucun changement, on l'ignore
   try {
-    console.log('Exécution de "git commit" ...');
-    execSync('git commit -m "Auto commit on bot start"', { stdio: 'inherit' });
+    runCommand('git commit -m "Auto commit on bot start"', 'Commit automatique');
   } catch (commitError) {
     console.log('Aucun changement à commiter.');
   }
 
   // Pousser les changements vers la branche main
-  console.log('Exécution de "git push origin main" ...');
-  execSync('git push origin main', { stdio: 'inherit' });
+  runCommand('git push origin main', 'Pousser vers le dépôt distant');
 } catch (gitError) {
   console.error('Erreur lors de la mise à jour Git:', gitError);
   // Vous pouvez choisir de continuer même en cas d'erreur Git
@@ -24,11 +35,10 @@ try {
 
 try {
   // Déployer les commandes
-  console.log('Exécution de "node deploy-commands.js" ...');
-  execSync('node deploy-commands.js', { stdio: 'inherit' });
+  runCommand('node deploy-commands.js', 'Déploiement des commandes');
+
   // Démarrer le bot
-  console.log('Exécution de "node index.js" ...');
-  execSync('node index.js', { stdio: 'inherit' });
+  runCommand('node index.js', 'Démarrage du bot');
 } catch (botError) {
   console.error('Erreur lors du démarrage du bot:', botError);
 }

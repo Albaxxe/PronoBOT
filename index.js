@@ -9,9 +9,12 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.commands = new Collection();
 
 // 🔄 Chargement des commandes & événements
+// 1) Charger la BDD
+const loadDatabase = require('./loaders/databaseLoader')
 const loadCommands = require('./loaders/commandLoader');
 const loadEvents = require('./loaders/eventLoader');
 
+loadDatabase(client);
 loadCommands(client);
 loadEvents(client);
 
