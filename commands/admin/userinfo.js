@@ -2,7 +2,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { query } = require('../../src/database/db');
 
-
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('userinfo')
