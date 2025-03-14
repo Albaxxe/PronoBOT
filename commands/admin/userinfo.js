@@ -1,6 +1,7 @@
 // commands/userinfo.js
 const { SlashCommandBuilder } = require('discord.js');
-const { query } = require('../src/database/db');
+const { query } = require('../../src/database/db');
+
 
 module.exports = {
   data: new SlashCommandBuilder()
