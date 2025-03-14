@@ -1,0 +1,93 @@
+{
+  "1219823019283841085": {
+    "name": "@everyone",
+    "color": "#000000",
+    "position": 0,
+    "mentionable": false,
+    "hoist": false
+  },
+  "1229270537587392522": {
+    "name": "Direction",
+    "color": "#e67e22",
+    "position": 12,
+    "mentionable": true,
+    "hoist": true
+  },
+  "1247472681239187486": {
+    "name": "Modérateur",
+    "color": "#3498db",
+    "position": 10,
+    "mentionable": true,
+    "hoist": true
+  },
+  "1247472789326401646": {
+    "name": "Administrateur",
+    "color": "#ff0000",
+    "position": 11,
+    "mentionable": true,
+    "hoist": true
+  },
+  "1304248024502894732": {
+    "name": "Animateur",
+    "color": "#9b59b6",
+    "position": 9,
+    "mentionable": true,
+    "hoist": true
+  },
+  "1304248108779311156": {
+    "name": "Membre",
+    "color": "#11806a",
+    "position": 6,
+    "mentionable": true,
+    "hoist": true
+  },
+  "1304248139649253386": {
+    "name": "VIP",
+    "color": "#f1c40f",
+    "position": 7,
+    "mentionable": true,
+    "hoist": true
+  },
+  "1304248181248233492": {
+    "name": "Bot",
+    "color": "#000000",
+    "position": 8,
+    "mentionable": false,
+    "hoist": true
+  },
+  "1305460976702717992": {
+    "name": "F1 🏎️",
+    "color": "#000000",
+    "position": 5,
+    "mentionable": false,
+    "hoist": false
+  },
+  "1305461050417741856": {
+    "name": "FOOT ⚽",
+    "color": "#000000",
+    "position": 4,
+    "mentionable": false,
+    "hoist": false
+  },
+  "1305461174426538016": {
+    "name": "TENIS 🎾",
+    "color": "#000000",
+    "position": 3,
+    "mentionable": false,
+    "hoist": false
+  },
+  "1316908397479596143": {
+    "name": "RUGBY 🏉",
+    "color": "#000000",
+    "position": 2,
+    "mentionable": false,
+    "hoist": false
+  },
+  "1328164177931403308": {
+    "name": "PronoBOT",
+    "color": "#000000",
+    "position": 1,
+    "mentionable": false,
+    "hoist": false
+  }
+}

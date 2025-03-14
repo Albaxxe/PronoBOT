@@ -1,0 +1,39 @@
+{
+  "ping": { "roles": [] },
+  "help": { "roles": [] },
+  "info": { "roles": [] },
+  "stats": { "roles": [] },
+  "roll": { "roles": [] },
+  "coinflip": { "roles": [] },
+  "admin": {
+    "moderation": {
+      "manage": {
+        "roles": [],
+        "options": {
+          "user": { "roles": [] },
+          "reason": { "roles": [] }
+        }
+      }
+    },
+    "channel": {
+      "manage": {
+        "roles": [],
+        "options": {
+          "channel": { "roles": [] },
+          "name": { "roles": [] },
+          "number": { "roles": [] },
+          "type": { "roles": [] }
+        }
+      }
+    },
+    "command": {
+      "manage": {
+        "roles": [],
+        "options": {
+          "commande": { "roles": [] },
+          "newname": { "roles": [] }
+        }
+      }
+    }
+  }
+}

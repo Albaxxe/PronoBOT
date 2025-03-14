@@ -1,0 +1,16 @@
+{
+  "name": "prono-bot-discord",
+  "version": "1.0.0",
+  "description": "Bot discord de pronostique sportifs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node updateAndStart.js"
+  },
+  "author": "Albaxxe",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "discord.js": "^14.18.0",
+    "winston": "^3.17.0"
+  }
+}
